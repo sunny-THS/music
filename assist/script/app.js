@@ -3,6 +3,9 @@ document.querySelector('.submit_').addEventListener('click', function(e) {
   const files = inputFile.files;
   let folder =  prompt('Xin mời nhập tên','');
   uploadFile(files, folder);
+  document.querySelector('.submit_').disabled = true;
+  document.querySelector('form').reset();
+  document.querySelector('#filename').textContent = 'Choose a file...';
 });
 function uploadFile(files, folder) {
   var titlePage = document.querySelector('title');
