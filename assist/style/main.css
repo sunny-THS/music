@@ -1,0 +1,54 @@
+body {
+  text-align: center;
+  font-size: 40px;
+}
+#title {
+  font-size: 150%;
+  user-select: none;
+}
+.submit_ {
+  font-size: 1rem;
+  padding: 0.625rem 1.25rem;
+  vertical-align: middle;
+  margin-top: -2.25em;
+  margin-right: 0.25em;
+  cursor: pointer;
+}
+.submit_:active {
+  background: #000;
+  color: #fff;
+}
+.inputfile {
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+  color: #d3394c;
+  max-width: 80%;
+  font-size: 2rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.625rem 1.25rem;
+}
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    vertical-align: middle;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+.inputfile + label:hover {
+    color: #722040;
+}
