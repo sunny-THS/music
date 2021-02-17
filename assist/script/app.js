@@ -1,8 +1,8 @@
 document.querySelector('.submit_').addEventListener('click', function(e) {
   const inputFile = document.querySelector('.inputfile');
   const files = inputFile.files;
-  let folder =  prompt('Xin mời nhập tên','');
-  uploadFile(files, folder);
+  let folder =  prompt('Xin mời nhập tên chủ đề','');
+  uploadFile(files, folder=='null'? 'other' : folder);
   document.querySelector('.submit_').disabled = true;
   document.querySelector('form').reset();
   document.querySelector('#filename').textContent = 'Choose a file...';
